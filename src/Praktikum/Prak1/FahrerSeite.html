@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Fahrer</title>
+    <style>
+        .myDiv {
+            border: 5px outset black;
+            background-color: lightgoldenrodyellow;
+            height: 150px;
+            width: 500px;
+            margin: 0 auto;
+        }
+        .myTable {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="http://localhost/Praktikum/Prak1/UbersichtSeite.html">Übersicht</a>
+    <a href="http://localhost/Praktikum/Prak1/BestellungSeite.html">Bestellung</a>
+    <a href="http://localhost/Praktikum/Prak1/KundeSeite.html">Kunde</a>
+    <a href="http://localhost/Praktikum/Prak1/BakeryPage.html">Bäcker</a>
+    <a href="http://localhost/Praktikum/Prak1/FahrerSeite.html">Fahrer</a>
+</header>
+
+<h1>Fahrer</h1>
+
+<form action="https://echo.fbi.h-da.de/" id="KundenInfo" method="post" lang="de" accept-charset="UTF-8">
+    <div class="myDiv">
+        <h3 style="text-align: center">Bestellung 1</h3>
+        <table class="myTable">
+            <tr>
+                <td colspan="2">Manh Tan Doan, Nieder-Ramstädter Str. 191, 64285 Darmstadt</td>
+            </tr>
+            <tr>
+                <td>Margherita, Hawaii</td>
+                <td>8.5€</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" id="fertig1" name="1" value="Fertig" checked>
+                                <label for="fertig1">Fertig</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="unterwegs1" name="1" value="Unterwegs">
+                                <label for="unterwegs1">Unterwegs</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="geliefert1" name="1" value="Geliefert">
+                                <label for="geliefert1">Geliefert</label><br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="myDiv">
+        <h3 style="text-align: center">Bestellung 2</h3>
+        <table class="myTable">
+            <tr>
+                <td colspan="2">Quang Minh Phan Ho, Feldbergstr. 38, 64293 Darmstadt</td>
+            </tr>
+            <tr>
+                <td>Hawaii, Hawaii, Salami</td>
+                <td>12.5€</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" id="fertig2" name="2" value="Fertig" checked>
+                                <label for="fertig2">Fertig</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="unterwegs2" name="2" value="Unterwegs">
+                                <label for="unterwegs2">Unterwegs</label><br>
+                            </td>
+                            <td>
+                                <input type="radio" id="geliefert2" name="2" value="Geliefert">
+                                <label for="geliefert2">Geliefert</label><br>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <input type="submit" id="submit" value="Bestätigen">
+</form>
+</body>
+</html>

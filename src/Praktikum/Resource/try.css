@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Layout*/
+* {
+    margin: 0.2em;
+    padding: 0.2em;
+}
+body {
+    background-image: url("Background.jpg");
+    font:1em Verdana;
+    background-size: cover ;
+}
+footer, header {
+    text-align:center;
+    font-size: 1.5em;
+}
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5em;
+    letter-spacing: 0.09em;
+    padding: 1%;
+    border-radius: 1em;
+    border-width: 0.05em;
+    border-style: solid;
+}
+img {
+    width: 15em;
+    height: 15em;
+}
+
+.myDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15em;
+    width: 25em;
+    margin: 0 auto;
+}
+
+/*UbersichtSeite*/
+
+.vertical_nav {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.vertical_li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 2.2em;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #F1F1F0;
+}
+
+
+/* Link
+a:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
+a:visited {
+    color: #F1F1F0;
+    text-decoration: none;
+}
+.navigation {
+    display: flex;
+}
+
+.navigation a{
+    flex-direction: row;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: whitesmoke;
+}
+
+.navigation a.active {
+    font-weight: bold;
+    font-style: italic;
+    color: #ff0000;
+}*/
+
+/* Bestellungsseite*/
+
+.forPic { /* Assuming you want each div to occupy 50% of the pizza-section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.order-section {
+    display: flex;
+}
+.outline-section {
+    flex: 2;
+}
+.pizza-section {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.warenkorb-section {
+    flex: 1;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+
+/* Design*/
+body {
+    color: whitesmoke;
+}
+h1 {
+    color: white;
+    border-color: white;
+}
+.warenkorb-section {
+    color: #565656;
+    background-color: #E3E3E3;
+}
+
+.myDiv{
+    border: 5px outset black;
+    color: black;
+    background-color: lightgoldenrodyellow;
+}
+
+/* test */
+/** Schmale Bildschirme - Handy **/
+@media only screen and (min-device-width: 300px) and (max-device-width: 420px) {
+    header {
+        font-size: 2.3em;
+    }
+    body {
+        font-size: 1.2em;
+    }
+    body img {
+        font-size: initial;
+    }
+    .warenkorb-section {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: unset;
+        right: unset;
+        width: 50%;
+        height: 30vh;
+    }
+    .warenkorb-section * {
+        font-size: 1.15em;
+    }
+    .warenkorb-section h2 {
+        font-size: 2.3em;
+    }
+    .warenkorb-section .cart-item {
+        font-size: 1em;
+    }
+
+}

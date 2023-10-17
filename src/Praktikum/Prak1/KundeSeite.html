@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Kunde</title>
+    <style>
+        .myDiv {
+            border: 5px outset black;
+            background-color: lightgoldenrodyellow;
+            height: 200px;
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="http://localhost/Praktikum/Prak1/UbersichtSeite.html">Übersicht</a>
+    <a href="http://localhost/Praktikum/Prak1/BestellungSeite.html">Bestellung</a>
+    <a href="http://localhost/Praktikum/Prak1/KundeSeite.html">Kunde</a>
+    <a href="http://localhost/Praktikum/Prak1/BakeryPage.html">Bäcker</a>
+    <a href="http://localhost/Praktikum/Prak1/FahrerSeite.html">Fahrer</a>
+</header>
+
+<h1>Kunde</h1>
+
+<form action="https://echo.fbi.h-da.de/" id="KundenInfo" method="post" lang="de" accept-charset="UTF-8">
+    <div class="myDiv">
+        <h2 style="text-align: center">Pizza Salami</h2>
+        <div style="margin-left: 150px">
+            <input type="radio" id="bestellt1" name="1" value="Bestellt" checked>
+            <label for="bestellt1">Bestellt</label><br>
+            <input type="radio" id="imOfen1" name="1" value="Im Ofen">
+            <label for="imOfen1">Im Ofen</label><br>
+            <input type="radio" id="fertig1" name="1" value="Fertig">
+            <label for="fertig1">Fertig</label><br>
+            <input type="radio" id="unterwegs1" name="1" value="Unterwegs">
+            <label for="unterwegs1">Unterwegs</label><br>
+            <input type="radio" id="geliefert1" name="1" value="Geliefert">
+            <label for="geliefert1">Geliefert</label><br>
+        </div>
+    </div>
+
+    <div class="myDiv">
+        <h2 style="text-align: center">Pizza Margherita</h2>
+        <div style="margin-left: 150px">
+            <input type="radio" id="bestellt2" name="2" value="Bestellt" checked>
+            <label for="bestellt2">Bestellt</label><br>
+            <input type="radio" id="imOfen2" name="2" value="Im Ofen">
+            <label for="imOfen2">Im Ofen</label><br>
+            <input type="radio" id="fertig2" name="2" value="Fertig">
+            <label for="fertig2">Fertig</label><br>
+            <input type="radio" id="unterwegs2" name="2" value="Unterwegs">
+            <label for="unterwegs2">Unterwegs</label><br>
+            <input type="radio" id="geliefert2" name="2" value="Geliefert">
+            <label for="geliefert2">Geliefert</label><br>
+        </div>
+    </div>
+
+    <div class="myDiv">
+        <h2 style="text-align: center">Pizza Hawaii</h2>
+        <div style="margin-left: 150px">
+            <input type="radio" id="bestellt3" name="3" value="Bestellt" checked>
+            <label for="bestellt3">Bestellt</label><br>
+            <input type="radio" id="imOfen3" name="3" value="Im Ofen">
+            <label for="imOfen3">Im Ofen</label><br>
+            <input type="radio" id="fertig3" name="3" value="Fertig">
+            <label for="fertig3">Fertig</label><br>
+            <input type="radio" id="unterwegs3" name="3" value="Unterwegs">
+            <label for="unterwegs3">Unterwegs</label><br>
+            <input type="radio" id="geliefert3" name="3" value="Geliefert">
+            <label for="geliefert3">Geliefert</label><br>
+        </div>
+    </div>
+    <input type="submit" id="submit" value="Bestätigen">
+</form>
+</body>
+</html>

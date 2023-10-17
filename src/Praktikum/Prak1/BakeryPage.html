@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Bäcker</title>
+</head>
+<body>
+<header>
+    <a href="http://localhost/Praktikum/Prak1/UbersichtSeite.html">Übersicht</a>
+    <a href="http://localhost/Praktikum/Prak1/BestellungSeite.html">Bestellung</a>
+    <a href="http://localhost/Praktikum/Prak1/KundeSeite.html">Kunde</a>
+    <a href="http://localhost/Praktikum/Prak1/BakeryPage.html">Bäcker</a>
+    <a href="http://localhost/Praktikum/Prak1/FahrerSeite.html">Fahrer</a>
+</header>
+<h1>Bäcker</h1>
+<form action="https://echo.fbi.h-da.de/" id="BackerInfos" method="post" lang="de" accept-charset="UTF-8">
+    <table>
+        <tr>
+            <th></th>
+            <th>bestellt</th>
+            <th>Ofen</th>
+            <th>fertig</th>
+        </tr>
+        <tr>
+            <td>Salami</td>
+            <td>
+                <label><input type="radio" id="bestellt1" name="bestellung_1" value="bestellt" checked></label>
+            </td>
+            <td>
+                <label><input type="radio" id="oven1" name="bestellung_1" value="oven"></label>
+            </td>
+            <td>
+                <label><input type="radio" id="fertig1" name="bestellung_1" value="fertig"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Margherita</td>
+            <td>
+                <label><input type="radio" id="bestellt2" name="bestellung_2" value="bestellt" checked></label>
+            </td>
+            <td>
+                <label><input type="radio" id="oven2" name="bestellung_2" value="oven"></label>
+            </td>
+            <td>
+                <label><input type="radio" id="fertig2" name="bestellung_2" value="fertig"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Hawai</td>
+            <td>
+                <label><input type="radio" id="bestellt3" name="bestellung_3" value="bestellt" checked></label>
+            </td>
+            <td>
+                <label><input type="radio" id="oven3" name="bestellung_3" value="oven"></label>
+            </td>
+            <td>
+                <label><input type="radio" id="fertig3" name="bestellung_3" value="fertig"></label>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" id="submit" value="Bestätigen">
+</form>
+</body>
+</html>
